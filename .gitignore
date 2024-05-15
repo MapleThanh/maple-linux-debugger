@@ -1,0 +1,14 @@
+# Ignore build directories
+build/
+bin/
+lib/
+
+# Ignore CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# Ignore VSCode setting files
+.vscode
