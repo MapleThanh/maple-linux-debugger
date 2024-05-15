@@ -13,5 +13,8 @@ Makefile
 # Ignore VSCode setting files
 .vscode
 
+# Ignore executable output files
 *.out
 *.exe
+hello
+mapledbg
