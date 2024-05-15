@@ -12,3 +12,6 @@ Makefile
 
 # Ignore VSCode setting files
 .vscode
+
+*.out
+*.exe
