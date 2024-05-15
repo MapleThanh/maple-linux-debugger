@@ -1,6 +1,15 @@
+#include <fcntl.h>
+#include <fstream>
+#include <iomanip>
 #include <iostream>
+#include <sstream>
+#include <sys/ptrace.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <vector>
 
-
+#include "debugger.hpp"
 #include "linenoise.h"
 
 int main(int argc, char* argv[]) {
@@ -21,5 +30,8 @@ int main(int argc, char* argv[]) {
     }
     else if (pid >= 1) {
         // Parent process => Execute debugger
+        std::cout << "Started debugging process " << pid << '\n';
+        debugger dbg{prog, pid};
+        dbg.run();
     }
 }
