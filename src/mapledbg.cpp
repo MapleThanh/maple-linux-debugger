@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     }
 
     auto prog = argv[1];
-
+    //hehe
     auto pid = fork();
 
     if (pid == 0) {
